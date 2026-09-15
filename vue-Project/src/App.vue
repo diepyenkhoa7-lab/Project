@@ -1,49 +1,73 @@
+<!--template>
+  <div>
+    <button @click = "hienThi">
+      <span v-if="show">An</span>
+      <span v-else>Hien</span>
+
+    </button>
+    <p v-show="show">Noi dung hien thi</p>
+  </div>
+</template>
+
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-import Counter from './components/Counter.vue'
+import { ref } from 'vue';
+  const show = ref(false)
+  const hienThi = () => {
+    show.value = !show.value
+  }
+</script>
+
+<style scoper>
+
+</style-->
+
+<!--script setup>
+//import UserStatus from './components/UserStatus.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-    <Counter/>
-  </main>
+  <div id="app">
+    <UserStatus />
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
+<style>
+#app {
+  margin: 20px;
 }
+</style-->
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
+<!--template>
+  <div>
+    <ul>
+      <li v-for="item in productInfo" :key="item.name">
+        <strong>{{ item.name }}</strong> - Price: {{ item.price }}
+      </li>
+    </ul>
+  </div>
+</template>
+  <script setup>
+import { ref } from 'vue'
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+    const productInfo = ref([
+      { name: 'Durian',
+       price: 100 
+      },
+      { name: 'Mango',
+       price: 80 
+      }, 
+      { name: 'Passion Fruit',
+       price: 50 
+      }
+    ])
+</script-->
+<script setup>
+//import Array from './components/Array.vue'
+import ProductList from './components/ProductList.vue'
+</script>
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
+<template>
+  <div id="app">
+    <ProductList />
+  </div>
+</template>

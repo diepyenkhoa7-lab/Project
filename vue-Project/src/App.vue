@@ -61,7 +61,7 @@ import { ref } from 'vue'
       }
     ])
 </script-->
-<script setup>
+<!--script setup>
 //import Array from './components/Array.vue'
 import ProductList from './components/ProductList.vue'
 </script>
@@ -70,4 +70,150 @@ import ProductList from './components/ProductList.vue'
   <div id="app">
     <ProductList />
   </div>
+</template-->
+<!--template>
+  <main>
+    <TodoList />
+  </main>
+</template>
+
+<script>
+import TodoList from './components/ToDoList.vue'
+
+export default {
+  name: 'App',
+  components: {
+    TodoList
+  }
+};
+</script>
+
+<style>
+body {
+  margin: 0;
+  background-color: #f8f9fa;
+}
+</style-->
+<!--script setup>
+//import UserStatus from './components/UserStatus.vue'
+//import ModelDemo from './components/ModelDemo.vue';
+import Card from './components/Card.vue';
+</script>
+
+<template>
+  <div id="app">
+    <Card />
+  </div>
+</template-->
+
+
+<!--script setup>
+import { ref, computed } from 'vue'
+const searchQuery = ref('')
+const products = ref([
+  {id: 1, name: 'Ban phim co', inStock: true},
+  {id: 2, name: 'Chuot kh day', inStock: false},
+  {id: 3, name: 'dua hau', inStock: true}
+])
+//
+const filteredProduct = computed(() => {
+  return products.value.filter(item =>
+    item.name.toLowerCase().includes(searchQuery.value.toLowerCase())
+  )
+})
+</script>
+
+
+<template>
+  <input v-model="searchQuery" placeholder="Tim kiem san pham  "/>
+  <ul>
+    <li v-for="item in filteredProduct" :key="item.id">
+      {{ item.name }} - {{ item.inStock ? 'con hang' : 'het hang'}}
+    </li>
+  </ul>
+</template-->
+<!--script setup>
+import ProductManagement from './components/ProductManagement.vue'
+</script>
+
+<template>
+  <div id="app">
+    <ProductManagement />
+  </div>
+</template>
+
+<style>
+html,
+body,
+#app {
+  margin: 0;
+  min-height: 100%;
+  background: #f3f3f3;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+</style-->
+
+
+
+
+
+
+<!--ORDERFROM-->
+<!--script setup>
+import OrderFrom from './components/OrderFrom.vue'
+</script>
+
+<template>
+  <OrderFrom />
+</template>
+
+<style>
+html,
+body,
+#app {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+}
+
+#app {
+  display: block;
+  max-width: none;
+  padding: 0;
+}
+
+body {
+  display: block;
+}
+</style-->
+
+
+
+
+
+
+
+
+<!--LIST AND GRID-->>
+<!--script setup>
+import LayoutListAndGrid from './components/LayoutListAndGrid.vue'
+</script>
+
+<template>
+  <LayoutListAndGrid />
+</template-->
+
+
+
+<!--MASTERY SOCKS-->>
+<script setup>
+import MasterySocks from './components/MasterySocks.vue'
+</script>
+
+<template>
+  <MasterySocks />
 </template>

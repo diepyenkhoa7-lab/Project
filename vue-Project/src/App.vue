@@ -210,10 +210,38 @@ import LayoutListAndGrid from './components/LayoutListAndGrid.vue'
 
 
 <!--MASTERY SOCKS-->>
-<script setup>
+<!--script setup>
 import MasterySocks from './components/MasterySocks.vue'
 </script>
 
 <template>
   <MasterySocks />
+</template-->
+
+
+// Increment va Decrement
+<!--script setup>
+import IncrementandDecrement from './components/IncrementandDecrement.vue';
+</script>
+
+<template>
+  <IncrementandDecrement />
+</template-->
+
+// Information
+<!--script setup>
+import Information from './components/Information.vue';
+</script>
+
+<template>
+  <Information />
+</template-->
+
+//UserSetting
+<script setup>
+import UserSetting from './components/UserSetting.vue';
+</script>
+
+<template>
+  <UserSetting />
 </template>

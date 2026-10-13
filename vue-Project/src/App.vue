@@ -239,9 +239,59 @@ import Information from './components/Information.vue';
 
 //UserSetting
 <script setup>
-import UserSetting from './components/UserSetting.vue';
+//import UserSetting from './components/UserSetting.vue';
+//import LayoutListAndGrid from './components/LayoutListAndGrid.vue';
+
+// Bài 1: Tìm kiếm san phẩm trong danh sách
+//import SearchBar from './components/SearchBar.vue';
+// Bài 2: Danh sách mua hàng
+//import SalesTable from './components/SalesTable.vue';
+//import StudentList from './components/StudentList.vue';
+//import CounterApp from './components/CounterApp.vue';
+//import TaskManagement from './components/TaskManagement.vue';
+import Item from './components/Item.vue';
 </script>
 
 <template>
-  <UserSetting />
+  <!--SearchBar /-->
+  <!--SalesTable /-->
+  <!--StudentList />-->
+  <Item />
 </template>
+
+
+<!--script setup>
+import { ref } from 'vue'
+//import SearchBar from './components/SearchBar.vue'
+//import LayoutListAndGrid from './components/LayoutListAndGrid.vue'
+
+//const searchTerm = ref('')
+</script>
+
+<!--template>
+  <div class="app">
+    <LayoutListAndGrid :search-term="searchTerm">
+      <template #search>
+        <SearchBar v-model="searchTerm" />
+      </template>
+    </LayoutListAndGrid>
+  </div>
+</template-->
+
+<!--style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.app {
+  width: 100%;
+  padding: 20px;
+}
+</style-->
+

@@ -9,14 +9,14 @@ const products = ref([
     id: 1,
     name: 'Trà Thạch Đào',
     description: 'Một trải nghiệm thú vị khác! Sự hài hòa giữa vị trà cao cấp, vị sả thanh mát và những miếng đào thơm ngon mọng nước sẽ mang đến cho bạn một thức uống tuyệt vời.',
-    price: 100,
+    price: 1000000,
     image: 'https://www.highlandscoffee.com.vn/vnt_upload/product/01_2026/TRA_THACH_DAO_1.jpg' // Thay bằng URL ảnh thực tế
   },
   {
     id: 2,
     name: 'Freeze Trà Xanh',
     description: 'Thức uống rất được ưa chuộng! Trà xanh thượng hạng từ cao nguyên Việt Nam, kết hợp cùng đá xay, thạch trà dai dai, thơm ngon và một lớp kem dày phủ lên trên vô cùng hấp dẫn. Freeze Trà Xanh thơm ngon, mát lạnh, chinh phục bất cứ ai!',
-    price: 150,
+    price: 3000,
     image: 'https://www.highlandscoffee.com.vn/vnt_upload/product/01_2026/FREEZE_TRA_XANH.jpg' // Thay bằng URL ảnh thực tế
   }
 ])
